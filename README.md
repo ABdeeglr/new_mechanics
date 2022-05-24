@@ -1,6 +1,6 @@
 # README
 
-This document is created for phtsical model that I want to use frequently.
+This document is created for physical model that I want to use frequently.
 
 ## Function List
 
@@ -13,3 +13,6 @@ ver.0.1描述:
 
 后续更新想法：
 将绘制过程剥离, 仅对计算一千个坐标点进行抽象封装, 将绘图过程放在具体问题中实现.
+
+ver.0.2描述:
+已经完成上一版的想法.

@@ -23,11 +23,11 @@ def Project_Motion(v, theta, time):
 
 
     # Compute Data
-    _step = seq[2]/1000
-    _theta = seq[1] / 180 * np.pi
-    _t = np.arange(0,seq[2],_step)
-    v_x = seq[0] * np.cos(_theta) * _t
-    v_y = seq[0] * np.sin(_theta) * _t - 1 / 2 * 9.8 * _t * _t
+    _step = time / 1000
+    _theta = theta / 180 * np.pi
+    _t = np.arange(0,time,_step)
+    v_x = v * np.cos(_theta) * _t
+    v_y = v * np.sin(_theta) * _t - 1 / 2 * 9.8 * _t * _t
     
     res = [v_x, v_y]
     
